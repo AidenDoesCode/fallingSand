@@ -56,3 +56,7 @@ class SandManager:
                         self.grid[x][y], 
                         (x * BLOCK_SIZE, y * BLOCK_SIZE, BLOCK_SIZE, BLOCK_SIZE)
                     )
+    #method to clear the sand array if the button is clicked just by copying the initalize method
+    def clear_all(self):
+        self.grid = [[None for _ in range(GRID_HEIGHT)] for _ in range(GRID_WIDTH)]
+        self.frame_count = 0
